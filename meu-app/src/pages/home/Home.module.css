@@ -1,0 +1,118 @@
+.homeContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.titleH1 {
+  font-size: 2.5rem;
+  color: #a855f7;
+  margin-bottom: 20px;
+}
+
+.logoutButton {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 8px 16px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.logoutButton:hover {
+  background-color: #d32f2f;
+  transform: scale(1.05);
+}
+
+.connectButton {
+  position: absolute;
+  top: 20px;
+  right: 120px; /* Ajuste para ficar ao lado do botão Sair */
+  padding: 8px 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.connectButton:hover {
+  background-color: #388e3c;
+  transform: scale(1.05);
+}
+
+.welcomeMessage {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.connectionStatus {
+  font-size: 1.2rem;
+  color: #4caf50;
+  margin-top: 20px;
+}
+
+.qrCodeContainer {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 9999;
+  text-align: center;
+  color: white;
+  width: 300px;
+}
+
+.qrCodeContainer img {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.closeButton {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.closeButton:hover {
+  background-color: #d32f2f;
+}
+
+@media (max-width: 600px) {
+  .homeContainer {
+    padding: 15px;
+  }
+
+  .titleH1 {
+    font-size: 2rem;
+  }
+
+  .logoutButton, .connectButton {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+}
